@@ -1,0 +1,239 @@
+@import "variables";
+html, body {
+  height: 100%;
+}
+
+section.flash {
+  .flash-container {
+    width: 100%;
+    height: 100%;
+    background: url("../images/darkaurora.png") no-repeat fixed center top transparent;
+    background-size: cover;
+
+    .info-container {
+      position: relative;
+      text-align: center;
+      padding: 80px 50px;
+
+      .info{
+        h1{
+          font-family: 'Exo', sans-serif !important;
+          font-size: 48px;
+          color: $color-white-pink !important;
+          text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+        }
+        h3{
+          font-family: 'Nothing You Could Do', cursive !important;
+          color: $color-white-pink !important;
+          text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+        }
+      }
+      img{
+        border-radius: 200px;
+        max-width: 200px;
+        height: 200px;
+        border: $color-white-pink solid 1px;
+      }
+
+      .navigator{
+        text-align: center;
+        padding: 40px 40%;
+      }
+    }
+  }
+}
+
+section.main {
+  padding-top: 60px;
+  height: 800px;
+  background: $color-white;
+  .section{
+//    min-height: 600px;
+    padding-top: 80px;
+  }
+}
+
+.main-content{
+  margin: 80px 0;
+}
+
+#aboutme, #skills{
+  p{
+    line-height: 2em;
+    font-size: 1em;
+    padding: 20px;
+    color: #707070;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+  }
+}
+
+
+#projects{
+  .main-content{
+    ul.nav.nav-pills{
+      display: inline-block;
+      li{
+        &:hover{
+          background: transparent !important;
+        }
+        a{
+          color: #707070;
+          -webkit-transition: all ease 0.2s;
+          -moz-transition: all ease 0.2s;
+          -ms-transition: all ease 0.2s;
+          -o-transition: all ease 0.2s;
+          transition: all ease 0.2s;
+          &:hover{
+            background: transparent !important;
+            color: $color-aqua;
+          }
+        }
+        &.active > a{
+          background: transparent !important;
+          color: $color-aqua;
+        }
+      }
+    }
+  }
+
+  ul.project-list{
+    list-style: none;
+    width: 100%;
+    li{
+      &.project{
+        display: inline-block;
+        width: 255px;
+        background: #fafafa;
+        margin-right: 20px;
+        margin-bottom: 30px;
+
+        .img-container{
+          position: relative;
+          width: 100%;
+          max-height: 300px;
+          height: 190px;
+          &:hover{
+            .overlay{
+              display: block;
+              -webkit-transition: all ease 0.8s;
+              -moz-transition: all ease 0.8s;
+              -ms-transition: all ease 0.8s;
+              -o-transition: all ease 0.8s;
+              transition: all ease 0.8s;
+            }
+          }
+          .image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+
+          }
+          .overlay{
+            position: absolute;
+            background: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 100%;
+            display: none;
+            &:hover{
+              -webkit-transition: all ease 0.8s;
+              -moz-transition: all ease 0.8s;
+              -ms-transition: all ease 0.8s;
+              -o-transition: all ease 0.8s;
+              transition: all ease 0.8s;
+            }
+          }
+        }
+        .desc{
+          .title{
+            font-weight: 500;
+            font-size: 20px;
+            font-family: "Open Sans" sans-serif;
+          }
+          .overview{
+            color: #707070;
+            font-family: "Open Sans", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 16px;
+            &::after{
+              content: "...";
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+#contact{
+  form{
+    .form-control{
+      background: #fafafa;
+      height: 50px !important;
+      border: none;
+      &:active{
+        outline: none;
+      }
+      &:focus{
+        outline-style:none;
+        box-shadow:none;
+        border-color:transparent;
+      }
+    }
+    input.form-control{
+      width: 97%;
+    }
+    textarea.form-control{
+      width: 97%;
+      height: 180px !important;
+      resize: none;
+      overflow: scroll;
+    }
+
+    a.btn{
+      background: $color-aqua;
+      color: $color-white;
+      &:hover{
+        background: lighten($color-aqua, 10%);
+      }
+    }
+  }
+
+  .social{
+    a {
+      i{
+        color: $color-coral;
+        border: 2px solid #f2f2f2;
+        border-radius: 50%;
+        width: 64px;
+        font-size: 1.5714em;
+        padding: 19px 0;
+        opacity: 1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      &:hover i{
+        border: $color-coral solid 2px;
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+
+    }
+  }
+}
+
+footer{
+  p{
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}

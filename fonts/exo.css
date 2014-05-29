@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Exo Bold'), local('Exo-Bold'),
+    url(exo.woff) format('woff');
+}

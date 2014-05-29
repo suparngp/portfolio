@@ -1,0 +1,89 @@
+.timeline {
+  position: relative;
+  overflow: hidden; }
+  .timeline::before {
+    width: 1px;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: #626262;
+    margin-left: -1px; }
+  .timeline .period {
+    position: relative; }
+    .timeline .period .year {
+      position: absolute;
+      width: 110px;
+      border-radius: 5px;
+      top: -40px;
+      left: 50%;
+      margin-left: -55px;
+      background: #86abd7;
+      padding: 10px 15px;
+      color: white;
+      font-size: 16px;
+      line-height: 16px;
+      font-family: inherit;
+      font-weight: 400;
+      text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+      text-align: center; }
+    .timeline .period .item {
+      margin: 0;
+      padding: 0;
+      min-height: 150px;
+      position: relative;
+      margin-top: 40px; }
+      .timeline .period .item.odd .marker {
+        top: 80px; }
+      .timeline .period .item.even .marker {
+        top: 25px; }
+      .timeline .period .item:first-child {
+        margin-top: 0; }
+      .timeline .period .item .marker {
+        width: 38px;
+        height: 38px;
+        border-radius: 38px;
+        border: #86abd7 10px solid;
+        position: absolute;
+        left: 50%;
+        margin-left: -19px;
+        background: #fafafa; }
+      .timeline .period .item .content {
+        width: 512px;
+        min-height: 150px;
+        background: #fafafa;
+        border-radius: 10px;
+        padding: 20px 20px; }
+        .timeline .period .item .content.left::after {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 89px;
+          left: 512px;
+          border-top: 10px solid transparent;
+          border-left: 10px solid #fafafa;
+          border-bottom: 10px solid transparent; }
+        .timeline .period .item .content.right {
+          float: right; }
+        .timeline .period .item .content.right::before {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 34px;
+          right: 512px;
+          border-top: 10px solid transparent;
+          border-right: 10px solid #fafafa;
+          border-bottom: 10px solid transparent; }
+        .timeline .period .item .content .desc .title {
+          padding: 0;
+          margin: 0;
+          font-size: 24px;
+          line-height: 24px;
+          color: #93cbc0; }
+        .timeline .period .item .content .desc .subtitle {
+          font-family: 'Alegreya Sans', sans-serif !important;
+          color: #6c6c6c;
+          margin: 5px 0; }

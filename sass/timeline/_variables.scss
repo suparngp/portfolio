@@ -1,0 +1,36 @@
+$base-color: #86ABD7;
+$bar-color: #626262;
+$steel-blue: #93CBC0;
+$light-grey: #6c6c6c;
+//defines the bold marker
+$marker-width: 38px;
+$marker-height: 38px;
+$marker-border-width: 10px;
+$marker-border-color: $base-color;
+$marker-border-radius: $marker-width;
+$marker-bg-color: #fafafa;
+$marker-margin-top-right: 25px;
+$marker-margin-top-left: 80px;
+
+//properties of the year block.
+$year-bg-color: $base-color;
+$year-color: #fff;
+$year-vertical-padding: 10px;
+$year-side-padding: 15px;
+$year-font-size: 16px;
+$year-line-height: 16px;
+$year-font-family: inherit;
+$year-font-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+$year-width: 110px;
+$year-font-weight: 400;
+$year-margin-top: 0px;
+
+
+//properties of content block
+$content-width: 512px;
+$content-min-height: 150px;
+$content-bg-color: #fafafa;
+$content-margin-top: 40px;
+$arrow-color: #fafafa;
+$arrow-size: 10px;
+$arrow-top: 25px;

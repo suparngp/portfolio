@@ -1,0 +1,130 @@
+.timeline{
+
+  position: relative;
+  overflow: hidden;
+  &::before{
+    width: 1px;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: $bar-color;
+    margin-left: -1px;
+  }
+
+  .period{
+    position: relative;
+    .year{
+      position: absolute;
+      width: $year-width;
+      border-radius: 5px;
+      top: $year-margin-top - $content-margin-top;
+      left: 50%;
+      margin-left: -$year-width/2;
+      background: $year-bg-color;
+      padding: $year-vertical-padding $year-side-padding;
+      color: $year-color;
+      font-size: $year-font-size;
+      line-height: $year-line-height;
+      font-family: $year-font-family;
+      font-weight: $year-font-weight;
+      text-shadow: $year-font-shadow;
+      text-align: center;
+    }
+    .item {
+      margin: 0;
+      padding: 0;
+      min-height: 150px;
+      position: relative;
+      margin-top: $content-margin-top;
+      &.odd{
+        .marker{
+          top: $marker-margin-top-left
+        }
+      }
+
+      &.even{
+        .marker{
+          top: $marker-margin-top-right;
+        }
+
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .marker {
+        width: $marker-width;
+        height: $marker-height;
+        border-radius: $marker-border-radius;
+        border: $marker-border-color $marker-border-width solid;
+        position: absolute;
+//        top: $marker-margin-top + $year-line-height + $year-vertical-padding * 2 - $content-margin-top;
+        left: 50%;
+        margin-left: -$marker-width/2;
+        background: $marker-bg-color;
+
+      }
+
+      .content {
+
+        width: $content-width;
+        min-height: $content-min-height;
+        background: $content-bg-color;
+        border-radius: 10px;
+        padding: 20px 20px;
+        &.left::after {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+//          top: $marker-height / 2 + $marker-margin-top +
+//        (($year-line-height + $year-vertical-padding * 2)) - $arrow-size - $content-margin-top;
+          top: $marker-margin-top-left + $marker-height / 2 - $arrow-size;
+          left: $content-width;
+          border-top: $arrow-size solid transparent;
+          border-left: $arrow-size solid $arrow-color;
+          border-bottom: $arrow-size solid transparent;
+        }
+
+        &.right {
+          float: right;
+        }
+        &.right::before {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+//          top: $marker-height / 2 + $marker-margin-top +
+//        (($year-line-height + $year-vertical-padding * 2)) - $arrow-size -$content-margin-top;
+          top: $marker-margin-top-right + $marker-height / 2 - $arrow-size;
+          right: $content-width;
+          border-top: $arrow-size solid transparent;
+          border-right: $arrow-size solid $arrow-color;
+          border-bottom: $arrow-size solid transparent;
+        }
+
+        .desc{
+          .title{
+            padding: 0;
+            margin: 0;
+            font-size: 24px;
+            line-height: 24px;
+            color: $steel-blue;
+          }
+          .subtitle{
+            font-family: 'Alegreya Sans', sans-serif !important;
+            color: $light-grey;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+
+}

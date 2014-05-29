@@ -1,0 +1,23 @@
+body, h1, h2, h3, h4, h5, h6, p{
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  color: #222222;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-header{
+  font-weight: 300;
+  text-align: center;
+}
+.subheader{
+  color: #6f6f6f !important;
+  font-family: 'Alegreya Sans', sans-serif !important;
+  text-align: center;
+}
+
+.white{
+  color: $color-white;
+}
+.default{
+  color: $color-default;
+}
