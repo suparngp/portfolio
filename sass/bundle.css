@@ -1,3 +1,4 @@
+@import url(../css/font-awesome.min.css);
 body, h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
   color: #222222;
@@ -66,7 +67,9 @@ section.main {
   height: 800px;
   background: white; }
   section.main .section {
-    padding-top: 80px; }
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px; }
 
 .main-content {
   margin: 80px 0; }
@@ -99,11 +102,14 @@ section.main {
     color: #61d2d6; }
 #projects ul.project-list {
   list-style: none;
-  width: 100%; }
+  width: 82%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
   #projects ul.project-list li.project {
     display: inline-block;
     width: 255px;
-    background: #fafafa;
+    background: white;
     margin-right: 20px;
     margin-bottom: 30px; }
     #projects ul.project-list li.project .img-container {
@@ -135,17 +141,26 @@ section.main {
           -ms-transition: all ease 0.8s;
           -o-transition: all ease 0.8s;
           transition: all ease 0.8s; }
-    #projects ul.project-list li.project .desc .title {
-      font-weight: 500;
-      font-size: 20px;
-      font-family: "Open Sans" sans-serif; }
-    #projects ul.project-list li.project .desc .overview {
-      color: #707070;
-      font-family: "Open Sans", sans-serif;
-      -webkit-font-smoothing: antialiased;
-      font-size: 16px; }
-      #projects ul.project-list li.project .desc .overview::after {
-        content: "..."; }
+        #projects ul.project-list li.project .img-container .overlay i {
+          color: #61d2d6;
+          position: absolute;
+          width: 0;
+          left: 50%;
+          margin-left: -20px;
+          top: 50%;
+          margin-top: -15px; }
+    #projects ul.project-list li.project .desc {
+      padding: 5px 10px; }
+      #projects ul.project-list li.project .desc .title {
+        font-weight: 500 !important;
+        font-size: 20px; }
+      #projects ul.project-list li.project .desc .overview {
+        color: #707070;
+        font-family: "Open Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 13px; }
+        #projects ul.project-list li.project .desc .overview::after {
+          content: "..."; }
 
 #contact form .form-control {
   background: #fafafa;

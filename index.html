@@ -74,7 +74,6 @@
     </nav>
 </section>
 <section class="main">
-<div class="container">
 
 <div id="aboutme" class="section">
     <h1 class="page-header">About <span class="default">Me</span></h1>
@@ -251,10 +250,52 @@
                         <h5 class="overview">A social networking platform for students</h5>
                     </div>
                 </li>
-                <li class="project web"></li>
-                <li class="project os"></li>
-                <li class="project web"></li>
-                <li class="project nc"></li>
+                <li class="project web">
+                    <div class="img-container">
+                        <img src="images/camptie.jpg" class="image">
+
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="desc">
+                        <h3 class="title">Camptie</h3>
+                        <h5 class="overview">A social networking platform for students</h5>
+                    </div>
+                </li>
+                <li class="project os">
+                    <div class="img-container">
+                        <img src="images/camptie.jpg" class="image">
+
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="desc">
+                        <h3 class="title">Camptie</h3>
+                        <h5 class="overview">A social networking platform for students</h5>
+                    </div>
+                </li>
+                <li class="project web">
+                    <div class="img-container">
+                        <img src="images/camptie.jpg" class="image">
+
+                        <div class="overlay">
+                            <i class="fa fa-html5 fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h3 class="title">Camptie</h3>
+                        <h5 class="overview">A social networking platform for students</h5>
+                    </div>
+                </li>
+                <li class="project nc">
+                    <div class="img-container">
+                        <img src="images/camptie.jpg" class="image">
+
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="desc">
+                        <h3 class="title">Camptie</h3>
+                        <h5 class="overview">A social networking platform for students</h5>
+                    </div>
+                </li>
 
             </ul>
         </div>
@@ -279,6 +320,11 @@
             I started of as a Java Developer.
             I started of as a Java Developer.
         </p>
+
+        <div class="knobs">
+            <input data-readOnly=true value="0" type="text" id="html">
+            <input data-readOnly=true value="0" type="text" id="html2">
+        </div>
     </div>
 </div>
 <div id="contact" class="section">
@@ -367,7 +413,6 @@
         </div>
     </div>
 </div>
-</div>
 </section>
 
 <section id="footer">
@@ -378,6 +423,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/skrollr.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.knob.js"></script>
 <script>
     var s = skrollr.init();
     var projects = $('ul.project-list');
@@ -392,6 +438,15 @@
             filter: cls
         });
     }
+
+    $('#html').knob();
+    $('#html2').knob();
+    var timer = setInterval(function(){
+        $('#html').val(Number($('#html').val()) + 1).trigger('change');
+        if(Number($('#html').val())  == 100){
+            clearInterval(timer);
+        }
+    }, 10);
 </script>
 </body>
 </html>

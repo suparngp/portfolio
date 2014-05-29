@@ -1,3 +1,4 @@
+@import url(../css/font-awesome.min.css);
 /* line 1, ../sass/_commons.scss */
 body, h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
@@ -45,67 +46,69 @@ a.btn.white:hover {
   border-color: #ff824b;
 }
 
-/* line 2, ../sass/_layouts.scss */
+/* line 3, ../sass/_layouts.scss */
 html, body {
   height: 100%;
 }
 
-/* line 7, ../sass/_layouts.scss */
+/* line 8, ../sass/_layouts.scss */
 section.flash .flash-container {
   width: 100%;
   height: 100%;
   background: url("../images/darkaurora.png") no-repeat fixed center top transparent;
   background-size: cover;
 }
-/* line 13, ../sass/_layouts.scss */
+/* line 14, ../sass/_layouts.scss */
 section.flash .flash-container .info-container {
   position: relative;
   text-align: center;
   padding: 80px 50px;
 }
-/* line 19, ../sass/_layouts.scss */
+/* line 20, ../sass/_layouts.scss */
 section.flash .flash-container .info-container .info h1 {
   font-family: 'Exo', sans-serif !important;
   font-size: 48px;
   color: #fafafa !important;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
 }
-/* line 25, ../sass/_layouts.scss */
+/* line 26, ../sass/_layouts.scss */
 section.flash .flash-container .info-container .info h3 {
   font-family: 'Nothing You Could Do', cursive !important;
   color: #fafafa !important;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
 }
-/* line 31, ../sass/_layouts.scss */
+/* line 32, ../sass/_layouts.scss */
 section.flash .flash-container .info-container img {
   border-radius: 200px;
   max-width: 200px;
   height: 200px;
   border: #fafafa solid 1px;
 }
-/* line 38, ../sass/_layouts.scss */
+/* line 39, ../sass/_layouts.scss */
 section.flash .flash-container .info-container .navigator {
   text-align: center;
   padding: 40px 40%;
 }
 
-/* line 46, ../sass/_layouts.scss */
+/* line 47, ../sass/_layouts.scss */
 section.main {
   padding-top: 60px;
   height: 800px;
   background: white;
 }
-/* line 50, ../sass/_layouts.scss */
+/* line 51, ../sass/_layouts.scss */
 section.main .section {
   padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-/* line 56, ../sass/_layouts.scss */
+/* line 59, ../sass/_layouts.scss */
 .main-content {
   margin: 80px 0;
 }
 
-/* line 61, ../sass/_layouts.scss */
+/* line 64, ../sass/_layouts.scss */
 #aboutme p, #skills p {
   line-height: 2em;
   font-size: 1em;
@@ -116,15 +119,15 @@ section.main .section {
   text-align: center;
 }
 
-/* line 75, ../sass/_layouts.scss */
+/* line 78, ../sass/_layouts.scss */
 #projects .main-content ul.nav.nav-pills {
   display: inline-block;
 }
-/* line 78, ../sass/_layouts.scss */
+/* line 81, ../sass/_layouts.scss */
 #projects .main-content ul.nav.nav-pills li:hover {
   background: transparent !important;
 }
-/* line 81, ../sass/_layouts.scss */
+/* line 84, ../sass/_layouts.scss */
 #projects .main-content ul.nav.nav-pills li a {
   color: #707070;
   -webkit-transition: all ease 0.2s;
@@ -133,37 +136,40 @@ section.main .section {
   -o-transition: all ease 0.2s;
   transition: all ease 0.2s;
 }
-/* line 88, ../sass/_layouts.scss */
+/* line 91, ../sass/_layouts.scss */
 #projects .main-content ul.nav.nav-pills li a:hover {
   background: transparent !important;
   color: #61d2d6;
 }
-/* line 93, ../sass/_layouts.scss */
+/* line 96, ../sass/_layouts.scss */
 #projects .main-content ul.nav.nav-pills li.active > a {
   background: transparent !important;
   color: #61d2d6;
 }
-/* line 101, ../sass/_layouts.scss */
+/* line 104, ../sass/_layouts.scss */
 #projects ul.project-list {
   list-style: none;
-  width: 100%;
+  width: 82%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 105, ../sass/_layouts.scss */
+/* line 111, ../sass/_layouts.scss */
 #projects ul.project-list li.project {
   display: inline-block;
   width: 255px;
-  background: #fafafa;
+  background: white;
   margin-right: 20px;
   margin-bottom: 30px;
 }
-/* line 112, ../sass/_layouts.scss */
+/* line 118, ../sass/_layouts.scss */
 #projects ul.project-list li.project .img-container {
   position: relative;
   width: 100%;
   max-height: 300px;
   height: 190px;
 }
-/* line 118, ../sass/_layouts.scss */
+/* line 124, ../sass/_layouts.scss */
 #projects ul.project-list li.project .img-container:hover .overlay {
   display: block;
   -webkit-transition: all ease 0.8s;
@@ -172,14 +178,14 @@ section.main .section {
   -o-transition: all ease 0.8s;
   transition: all ease 0.8s;
 }
-/* line 127, ../sass/_layouts.scss */
+/* line 133, ../sass/_layouts.scss */
 #projects ul.project-list li.project .img-container .image {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
 }
-/* line 134, ../sass/_layouts.scss */
+/* line 140, ../sass/_layouts.scss */
 #projects ul.project-list li.project .img-container .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.1);
@@ -187,7 +193,7 @@ section.main .section {
   height: 100%;
   display: none;
 }
-/* line 140, ../sass/_layouts.scss */
+/* line 146, ../sass/_layouts.scss */
 #projects ul.project-list li.project .img-container .overlay:hover {
   -webkit-transition: all ease 0.8s;
   -moz-transition: all ease 0.8s;
@@ -195,61 +201,74 @@ section.main .section {
   -o-transition: all ease 0.8s;
   transition: all ease 0.8s;
 }
-/* line 150, ../sass/_layouts.scss */
-#projects ul.project-list li.project .desc .title {
-  font-weight: 500;
-  font-size: 20px;
-  font-family: "Open Sans" sans-serif;
+/* line 154, ../sass/_layouts.scss */
+#projects ul.project-list li.project .img-container .overlay i {
+  color: #61d2d6;
+  position: absolute;
+  width: 0;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -15px;
 }
-/* line 155, ../sass/_layouts.scss */
+/* line 165, ../sass/_layouts.scss */
+#projects ul.project-list li.project .desc {
+  padding: 5px 10px;
+}
+/* line 167, ../sass/_layouts.scss */
+#projects ul.project-list li.project .desc .title {
+  font-weight: 500 !important;
+  font-size: 20px;
+}
+/* line 171, ../sass/_layouts.scss */
 #projects ul.project-list li.project .desc .overview {
   color: #707070;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: 13px;
 }
-/* line 160, ../sass/_layouts.scss */
+/* line 176, ../sass/_layouts.scss */
 #projects ul.project-list li.project .desc .overview::after {
   content: "...";
 }
 
-/* line 173, ../sass/_layouts.scss */
+/* line 189, ../sass/_layouts.scss */
 #contact form .form-control {
   background: #fafafa;
   height: 50px !important;
   border: none;
 }
-/* line 177, ../sass/_layouts.scss */
+/* line 193, ../sass/_layouts.scss */
 #contact form .form-control:active {
   outline: none;
 }
-/* line 180, ../sass/_layouts.scss */
+/* line 196, ../sass/_layouts.scss */
 #contact form .form-control:focus {
   outline-style: none;
   box-shadow: none;
   border-color: transparent;
 }
-/* line 186, ../sass/_layouts.scss */
+/* line 202, ../sass/_layouts.scss */
 #contact form input.form-control {
   width: 97%;
 }
-/* line 189, ../sass/_layouts.scss */
+/* line 205, ../sass/_layouts.scss */
 #contact form textarea.form-control {
   width: 97%;
   height: 180px !important;
   resize: none;
   overflow: scroll;
 }
-/* line 196, ../sass/_layouts.scss */
+/* line 212, ../sass/_layouts.scss */
 #contact form a.btn {
   background: #61d2d6;
   color: white;
 }
-/* line 199, ../sass/_layouts.scss */
+/* line 215, ../sass/_layouts.scss */
 #contact form a.btn:hover {
   background: #89dee1;
 }
-/* line 207, ../sass/_layouts.scss */
+/* line 223, ../sass/_layouts.scss */
 #contact .social a i {
   color: #ff824b;
   border: 2px solid #f2f2f2;
@@ -264,7 +283,7 @@ section.main .section {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 221, ../sass/_layouts.scss */
+/* line 237, ../sass/_layouts.scss */
 #contact .social a:hover i {
   border: #ff824b solid 2px;
   -webkit-transform: scale(1.05);
@@ -274,7 +293,7 @@ section.main .section {
   transform: scale(1.05);
 }
 
-/* line 235, ../sass/_layouts.scss */
+/* line 251, ../sass/_layouts.scss */
 footer p {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
