@@ -3,15 +3,16 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/bundle.css" rel="stylesheet" type="text/css">
-    <link href='fonts/exo.css' rel='stylesheet' type='text/css'>
-    <link href='fonts/nothingyoucoulddo.css' rel='stylesheet' type='text/css'>
-    <link href="fonts/opensans.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='fonts/alegreya.css' rel='stylesheet' type='text/css'>
-    <link href="css/timeline.css" rel="stylesheet" type="text/css">
-
+    <!--<link href="css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="css/app/bundle.css" rel="stylesheet" type="text/css">-->
+    <!--<link href='fonts/exo.css' rel='stylesheet' type='text/css'>-->
+    <!--<link href='fonts/nothingyoucoulddo.css' rel='stylesheet' type='text/css'>-->
+    <!--<link href="fonts/opensans.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="css/vendor/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <!--<link href='fonts/alegreya.css' rel='stylesheet' type='text/css'>-->
+    <!--<link href="css/vendor/timeline.css" rel="stylesheet" type="text/css">-->
+    <link href="fonts/fonts.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bundle.min.css" rel="stylesheet" type="text/css">
 <body data-spy="scroll" data-target="#navbar-items">
 <section class="flash">
     <div class="flash-container">
@@ -419,11 +420,8 @@
 
 </section>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/skrollr.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/jquery.knob.js"></script>
+<script src="js/bundle.min.js"></script>
+
 <script>
     var s = skrollr.init();
     var projects = $('ul.project-list');
@@ -440,7 +438,7 @@
     }
 
     $('#html').knob();
-    $('#html2').knob();
+    $('#html').knob();
     var timer = setInterval(function(){
         $('#html').val(Number($('#html').val()) + 1).trigger('change');
         if(Number($('#html').val())  == 100){
